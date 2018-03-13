@@ -1,0 +1,503 @@
+#wrapper {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    width: 1080px;
+    height: 700px;
+}
+
+.roses {
+    position: absolute;
+    z-index: 6;
+    width: 200px;
+    animation: roses 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes roses {
+    from { transform: rotate(10deg) rotate(10deg); }
+    to   { transform: rotate(-10deg) rotate(-10deg); }
+}
+
+#rose1 {
+    top: 80px;
+    left: 13px;
+}
+
+#rose2 {
+    top: 80px;
+    right: 20px;
+}
+
+#rose3 {
+    bottom: 70px;
+    right: 20px;
+}
+
+#rose4 {
+    bottom: 70px;
+    left: 13px;
+}
+
+#bg {
+    position: absolute;
+    margin: 0 auto;
+    z-index: 5;
+}
+
+#greeting {
+    top: 120px;
+    left: 240px;
+    position: absolute;
+    z-index: 5;
+    margin: auto;
+    width: 600px;
+}
+
+#button {
+    position: absolute;
+    z-index: 5;
+    bottom: 85px;
+    right: 260px;
+    width: 350px;
+    animation: slowbounce 0.5s infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    transition: left 3s ease-in, top 3s ease-in;
+}
+
+@keyframes slowbounce {
+	0% {
+     transform: translateY(0);
+  }
+	50% {
+    transform: translateY(-6px);
+  }
+	100% {
+    transform: translateY(-6px));
+  }
+}
+
+#inside {
+    display: none;
+}
+
+#sky {
+    z-index: -2;
+}
+
+#stars {
+    position: absolute;
+    width: 1070px;
+    top: 10px;
+    align-content: center;
+    animation: fadein 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#sun {
+    position: absolute;
+    width: 180px;
+    left: 160px;
+    bottom: 255px;
+    z-index: 1;
+    animation: pulse 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: perspective(1px) translateZ(0);
+}
+
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+
+#grass {
+    position: absolute;
+    bottom: 100px;
+    right: 0px;
+    z-index: 2;
+}
+
+#fronthill {
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+    z-index: 3;
+}
+
+#tree {
+    position: absolute;
+    width: 550px;
+    right: 10px;
+    bottom: 165px;
+    z-index: 2;    
+}
+
+#calendar {
+    position: absolute;
+    width: 100px;
+    bottom: 300px;
+    right: 255px;
+    z-index: 2;
+}
+
+#bluebird {
+    position: absolute;
+    top: 142px;
+    left: 595px;
+    width: 75px;
+    z-index: 5;
+    transform: rotateZ(-2deg);
+    animation: bounce 0.3s infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    transition: left 3s ease-in, top 3s ease-in;
+}
+
+/*
+#bluewing {
+    position: absolute;
+    width: 37.5px;
+    bottom: 425px;
+    right: 365px;
+    z-index: 3;
+}
+*/
+
+#pinkbird {
+    position: absolute;
+    top: 140px;
+    left: 690px;
+    transform: rotateZ(-3deg);
+    width: 60px;
+    z-index: 3;
+    animation: bounce 0.3s infinite;
+    animation-timing-function: ease-in-out;
+    transition: left 3s ease-in-out, top 3s ease-in-out;
+}
+
+/*
+#pinkwing {
+    position: absolute;
+    width: 30px;
+    bottom: 608px;
+    right: 475px;
+    z-index: 2;
+}
+*/
+
+#yellowbird {
+    position: absolute;
+    top: 60px;
+    left: 850px;
+    transform: rotateZ(-5deg);
+    width: 70px;
+    z-index: 3;
+    animation: bounce 0.3s infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    transition: left 3s ease-in, top 3s ease-in;
+}
+
+@keyframes bounce {
+	0% {
+     transform: translateY(0);
+  }
+	50% {
+    transform: translateY(-5px);
+  }
+	100% {
+    transform: translateY(-2px));
+  }
+}
+
+
+/*#yellowwing {
+    position: absolute;
+    width: 35px;
+    bottom: 502px;
+    right: 222px;
+    z-index: 2;
+}
+*/
+
+#bees {
+    position: absolute;
+    width: 125px;
+    bottom: 350px;
+    left: 360px;
+    z-index: 3;
+    animation: buzz 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes buzz {
+    from { transform: rotate(0deg) translateX(-50px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+    
+    
+}
+
+#backtulips {
+    position: absolute;
+    z-index: 2;
+    width: 400px;
+    bottom: 260px;
+    right: 380px;
+}
+
+#fronttulips {
+    position: absolute;
+    width: 550px;
+    bottom: 110px;
+    left: 50px;
+    z-index: 4
+}
+
+#ladybugs1 {
+    position: absolute;
+    width: 170px;
+    right: 100px;
+    bottom: 190px;
+    z-index: 3;
+}
+
+#ladybugs2 {
+    position: absolute;
+    width: 110px;
+    right: 10px;
+    bottom: 125px;
+    z-index: 3;
+    animation-delay: 2sec;
+    animation-direction: reverse;
+}
+
+@keyframes buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+.ladybugs {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+    animation-name: buzz-out;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+#girl {
+    position: absolute;
+    width: 100px;
+    left: 20px;
+    z-index: 3;
+    bottom: 230px;
+    
+}
+
+#mom {
+    position: absolute;
+    width: 135px;
+    left: 120px;
+    z-index: 3;
+    bottom: 227px;
+}
+
+#bouquet {
+    position: absolute;
+    width: 100px;
+    left: 75px;
+    z-index: 3;
+    bottom: 310px;
+    transform: perspective(1px) translateZ(0);
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+#bouquet:hover {
+    /*animation: /*shake animation or forward transition*/ /* shake 1.7s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;*/
+    transform: translateX(15px);
+}
+
+/*@keyframes shake {
+  16.65% {
+    -webkit-transform: translate(6px, -6px);
+    transform: translate(6px, -6px);
+  }
+  33.3% {
+    -webkit-transform: translate(-4px, 4px);
+    transform: translate(-4px, 4px);
+  }
+  49.95% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  66.6% {
+    -webkit-transform: translate(-1px, 1px);
+    transform: translate(-1px, 1px);
+  }
+  83.25% {
+    -webkit-transform: translate(0.5px, -0.5px);
+    transform: translate(0.5px, -0.5px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+*/
+
+#arm {
+    position: absolute;
+    width: 50px;
+    left: 52px;
+    z-index: 4;
+    bottom: 315px;
+}
+
+.facts {
+    display: none;
+    width: 200px;
+}
+
+#first {
+    position: absolute;
+    bottom: 425px;
+    right: 410px;
+    z-index: 2;
+    width: 130px;
+}
+
+#second {
+    position: absolute;
+    bottom: 480px;
+    left: 300px;
+}
+
+#third {
+    position: absolute;
+    bottom: 105px;
+    right: 310px;
+    z-index: 3;
+}
+
+#fourth {
+    position: absolute;
+    bottom: 238px;
+    right: 150px;
+    z-index: 2;
+    width: 135px;
+}
+
+#fifth {
+    position: absolute;
+    bottom: 235px;
+    right: 0px;
+    z-index: 2;
+    width: 135px;
+}
+
+#sixth {
+    position: absolute;
+    bottom: 525px;
+    right: 190px;
+    z-index: 2;
+    width: 140px;
+}
+
+#seventh {
+    position: absolute;
+    bottom: 195px;
+    left: 200px;
+    width: 140px;
+    z-index: 3;
+}
+
+#eighth {
+    position: absolute;
+    bottom: 500px;
+    left: 150px;
+    width: 150px;
+    z-index: 3;
+}
+
+#ninenth {
+    position: absolute;
+    bottom: 480px;
+    left: 300px;
+    z-index: 3;
+    width: 150px;
+}
+
+#tenth {
+    position: absolute;
+    bottom: 447px;
+    left: 13px;
+    width: 150px;
+}
